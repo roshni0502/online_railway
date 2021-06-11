@@ -1,0 +1,184 @@
+total_bill   tip  Gender  ...          Payer Name     CC Number Payment ID
+0         16.99  1.01  Female  ...  Christy Cunningham  3.560330e+15    Sun2959
+1         10.34  1.66    Male  ...      Douglas Tucker  4.478070e+15    Sun4608
+2         21.01  3.50    Male  ...      Travis Walters  6.011810e+15    Sun4458
+3         23.68  3.31    Male  ...    Nathaniel Harris  4.676140e+15    Sun5260
+4         24.59  3.61  Female  ...        Tonya Carter  4.832730e+15    Sun2251
+..          ...   ...     ...  ...                 ...           ...        ...
+239       29.03  5.92    Male  ...       Michael Avila  5.296070e+15    Sat2657
+240       27.18  2.00  Female  ...      Monica Sanders  3.506810e+15    Sat1766
+241       22.67  2.00    Male  ...          Keith Wong  6.011890e+15    Sat3880
+242       17.82  1.75    Male  ...        Dennis Dixon  4.375220e+12      Sat17
+243       18.78  3.00  Female  ...     Michelle Hardin  3.511450e+15    Thur672
+
+[244 rows x 11 columns]
+0      16.99
+1      10.34
+2      21.01
+3      23.68
+4      24.59
+       ...  
+239    29.03
+240    27.18
+241    22.67
+242    17.82
+243    18.78
+Name: total_bill, Length: 244, dtype: float64
+0      1.01
+1      1.66
+2      3.50
+3      3.31
+4      3.61
+       ... 
+239    5.92
+240    2.00
+241    2.00
+242    1.75
+243    3.00
+Name: tip, Length: 244, dtype: float64
+0       5.944673
+1      16.054159
+2      16.658734
+3      13.978041
+4      14.680765
+         ...    
+239    20.392697
+240     7.358352
+241     8.822232
+242     9.820426
+243    15.974441
+Name: percent, Length: 244, dtype: float64
+            total_bill   tip  ...          Payer Name     CC Number
+Payment ID                    ...                                  
+Sun2959          16.99  1.01  ...  Christy Cunningham  3.560330e+15
+Sun4608          10.34  1.66  ...      Douglas Tucker  4.478070e+15
+Sun4458          21.01  3.50  ...      Travis Walters  6.011810e+15
+Sun5260          23.68  3.31  ...    Nathaniel Harris  4.676140e+15
+Sun2251          24.59  3.61  ...        Tonya Carter  4.832730e+15
+...                ...   ...  ...                 ...           ...
+Sat2657          29.03  5.92  ...       Michael Avila  5.296070e+15
+Sat1766          27.18  2.00  ...      Monica Sanders  3.506810e+15
+Sat3880          22.67  2.00  ...          Keith Wong  6.011890e+15
+Sat17            17.82  1.75  ...        Dennis Dixon  4.375220e+12
+Thur672          18.78  3.00  ...     Michelle Hardin  3.511450e+15
+
+[244 rows x 10 columns]
+First 3 rows of dataframe are
+   total_bill   tip  Gender  ...          Payer Name     CC Number Payment ID
+0       16.99  1.01  Female  ...  Christy Cunningham  3.560330e+15    Sun2959
+1       10.34  1.66    Male  ...      Douglas Tucker  4.478070e+15    Sun4608
+2       21.01  3.50    Male  ...      Travis Walters  6.011810e+15    Sun4458
+
+[3 rows x 11 columns]
+DataFrame After Deletion Of 2 row
+     total_bill   tip  Gender  ...          Payer Name     CC Number Payment ID
+2         21.01  3.50    Male  ...      Travis Walters  6.011810e+15    Sun4458
+3         23.68  3.31    Male  ...    Nathaniel Harris  4.676140e+15    Sun5260
+4         24.59  3.61  Female  ...        Tonya Carter  4.832730e+15    Sun2251
+5         25.29  4.71    Male  ...          Erik Smith  2.131400e+14    Sun9679
+6          8.77  2.00    Male  ...  Kristopher Johnson  2.223730e+15    Sun5985
+..          ...   ...     ...  ...                 ...           ...        ...
+239       29.03  5.92    Male  ...       Michael Avila  5.296070e+15    Sat2657
+240       27.18  2.00  Female  ...      Monica Sanders  3.506810e+15    Sat1766
+241       22.67  2.00    Male  ...          Keith Wong  6.011890e+15    Sat3880
+242       17.82  1.75    Male  ...        Dennis Dixon  4.375220e+12      Sat17
+243       18.78  3.00  Female  ...     Michelle Hardin  3.511450e+15    Thur672
+
+[242 rows x 11 columns]
+DataFrame After Deletion where Payement Id is Sun2959
+     total_bill   tip  Gender  ...        Payer Name     CC Number Payment ID
+1         10.34  1.66    Male  ...    Douglas Tucker  4.478070e+15    Sun4608
+2         21.01  3.50    Male  ...    Travis Walters  6.011810e+15    Sun4458
+3         23.68  3.31    Male  ...  Nathaniel Harris  4.676140e+15    Sun5260
+4         24.59  3.61  Female  ...      Tonya Carter  4.832730e+15    Sun2251
+5         25.29  4.71    Male  ...        Erik Smith  2.131400e+14    Sun9679
+..          ...   ...     ...  ...               ...           ...        ...
+239       29.03  5.92    Male  ...     Michael Avila  5.296070e+15    Sat2657
+240       27.18  2.00  Female  ...    Monica Sanders  3.506810e+15    Sat1766
+241       22.67  2.00    Male  ...        Keith Wong  6.011890e+15    Sat3880
+242       17.82  1.75    Male  ...      Dennis Dixon  4.375220e+12      Sat17
+243       18.78  3.00  Female  ...   Michelle Hardin  3.511450e+15    Thur672
+
+[243 rows x 11 columns]
+Rows whose Total bill is greater then 40 and day is sun
+Empty DataFrame
+Columns: [total_bill, tip, Gender, smoker, day, time, size, price_per_person, Payer Name, CC Number, Payment ID]
+Index: []
+Rows whose Tip is greater then 5 and Gender is Female
+     total_bill   tip  Gender  ...       Payer Name     CC Number Payment ID
+52        34.81  5.20  Female  ...     Emily Daniel  4.291280e+15    Sun6165
+85        34.83  5.17  Female  ...      Shawna Cook  6.011790e+15   Thur7972
+155       29.85  5.14  Female  ...   Madison Wilson  4.210880e+15    Sun9176
+214       28.17  6.50  Female  ...  Marissa Jackson  4.922300e+15    Sat3374
+
+[4 rows x 11 columns]
+Use of Loc Method
+total_bill                       23.68
+tip                               3.31
+Gender                            Male
+smoker                              No
+day                                Sun
+time                            Dinner
+size                                 2
+price_per_person                 11.84
+CC Number           4676140000000000.0
+Payment ID                     Sun5260
+Name: Nathaniel Harris, dtype: object 
+
+
+ total_bill                       27.18
+tip                                2.0
+Gender                          Female
+smoker                             Yes
+day                                Sat
+time                            Dinner
+size                                 2
+price_per_person                 13.59
+CC Number           3506810000000000.0
+Payment ID                     Sat1766
+Name: Monica Sanders, dtype: object
+Use of iloc Method
+total_bill                       23.68
+tip                               3.31
+Gender                            Male
+smoker                              No
+day                                Sun
+time                            Dinner
+size                                 2
+price_per_person                 11.84
+CC Number           4676140000000000.0
+Payment ID                     Sun5260
+Name: Nathaniel Harris, dtype: object
+Use of isnull function
+                    total_bill    tip  ...  CC Number  Payment ID
+Payer Name                             ...                       
+Christy Cunningham       False  False  ...      False       False
+Douglas Tucker           False  False  ...      False       False
+Travis Walters           False  False  ...      False       False
+Nathaniel Harris         False  False  ...      False       False
+Tonya Carter             False  False  ...      False       False
+...                        ...    ...  ...        ...         ...
+Michael Avila            False  False  ...      False       False
+Monica Sanders           False  False  ...      False       False
+Keith Wong               False  False  ...      False       False
+Dennis Dixon             False  False  ...      False       False
+Michelle Hardin          False  False  ...      False       False
+
+[244 rows x 10 columns]
+Use of dropna function 
+                    total_bill   tip  ...     CC Number Payment ID
+Payer Name                            ...                         
+Christy Cunningham       16.99  1.01  ...  3.560330e+15    Sun2959
+Douglas Tucker           10.34  1.66  ...  4.478070e+15    Sun4608
+Travis Walters           21.01  3.50  ...  6.011810e+15    Sun4458
+Nathaniel Harris         23.68  3.31  ...  4.676140e+15    Sun5260
+Tonya Carter             24.59  3.61  ...  4.832730e+15    Sun2251
+...                        ...   ...  ...           ...        ...
+Michael Avila            29.03  5.92  ...  5.296070e+15    Sat2657
+Monica Sanders           27.18  2.00  ...  3.506810e+15    Sat1766
+Keith Wong               22.67  2.00  ...  6.011890e+15    Sat3880
+Dennis Dixon             17.82  1.75  ...  4.375220e+12      Sat17
+Michelle Hardin          18.78  3.00  ...  3.511450e+15    Thur672
+
+[244 rows x 10 columns]
+ 

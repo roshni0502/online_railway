@@ -1,0 +1,89 @@
+.other-control{
+ position: relative;
+}
+.other-control.success input{
+  border-color:#2ecc71;
+}
+.other-control.success select{
+  border-color:#2ecc71;
+}
+.other-control.error input{
+  border-color:#e74c3c;
+}
+.other-control.error select{
+  border-color:#e74c3c;
+}
+.other-control i{
+ position: absolute;
+ right: 20px;
+ top:46px;
+ visibility: hidden;
+ 
+}
+.other-control.error input:focus{
+  outline: 0;
+  box-shadow: 0px 0px  8px  0px #e74c3c;
+}
+
+.other-control.error select:focus{
+  outline: 0;
+  box-shadow: 0px 0px  8px  0px #e74c3c;
+}
+.other-control.success input:focus{
+  outline: 0;
+  box-shadow: 0px 0px  8px  0px #2ecc71;
+}
+.other-control.success select:focus{
+  outline: 0;
+  box-shadow: 0px 0px  8px  0px #2ecc71;
+}
+.other-control small{
+	 visibility: hidden;
+}
+.other-control small{
+	color:#e74c3c;
+	position: absolute;
+	bottom: 1px;
+	left:1px;
+	margin-bottom: 10px;
+	visibility: visible;
+	
+
+}
+.other-control.error small{
+	 visibility: visible;
+	
+}
+
+
+.other-control.error i.fa-exclamation-circle{
+	color:#e74c3c;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+.dbox{
+	height: 30px;
+	background-color: red;
+}
+.cbox{
+	height: 500px;
+
+	border: 3px solid;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+   color: white;
+ background-color:gray;
+ 
+ }
+ .dropdown-item.active, .dropdown-item:active {
+   color: yellow;
+}
+button:hover{
+	background-color: gray;
+}

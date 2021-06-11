@@ -1,0 +1,46 @@
+.list-group-item-action:hover, .list-group-item-action:focus {
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+  background-color: red;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: pink;
+  text-align: left;
+  list-style: none;
+  background-color: black;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+caption{
+	border: 1px solid gray;
+}
+table-light {
+  --bs-table-bg: #f8f9fa;
+  --bs-table-striped-bg: #ecedee;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #dfe0e1;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #e5e6e7;
+  --bs-table-hover-color: black;
+  color: #000;
+  border-color: black;
+}

@@ -1,0 +1,117 @@
+#form{
+	text-align: left;
+	padding: 10px;
+	margin: 30px;
+	font-size: 15px;
+}
+#form input{
+	width: 300px;
+	height: 40px;
+	margin: 10px 10px 10px 0px;
+	border-radius: 3px;
+	border: 1px solid gray;
+	text-align: left;
+
+}
+
+#form select:focus{
+	width: 300px;
+	height: 40px;
+	margin: 10px 10px 10px 0px;
+	border-radius: 3px;
+	border: 1px solid gray;
+	text-align: left;
+
+}
+#form option{
+
+	width: 500px;
+	height: 40px;
+	margin: 10px;
+	border-radius: 3px;
+	border: 1px solid gray;
+	text-align: left;
+}
+
+
+
+#form input:focus{
+	outline: none;
+	border:2px solid white;
+	box-shadow: 0px 0px 6px 0px dodgerblue;
+
+}
+#badd{
+	width: 800px;
+	 height :40px;border: 1px solid green ;
+	 border-radius:4px; 
+	 background: green; 
+	 color: white;
+	 outline: none;
+}
+#badd:active{
+	box-shadow: 0px 0px 6px 0px green;
+}
+#badd:hover {
+border-color:#4caf50;
+background-color:#4caf50;
+ 
+}
+.other-control{
+ position: relative;
+}
+
+.other-control.success select{
+  border-color:#2ecc71;
+}
+.other-control.error input{
+  border-color:#e74c3c;
+}
+.other-control.error select{
+  border-color:#e74c3c;
+}
+.other-control i{
+ position: absolute;
+ right: 20px;
+ top:46px;
+ visibility: hidden;
+ 
+}
+
+.other-control.error select:focus{
+  outline: 0;
+  box-shadow: 0px 0px  8px  0px #e74c3c;
+}
+
+.other-control.success select:focus{
+  outline: 0;
+  box-shadow: 0px 0px  8px  0px #2ecc71;
+}
+.other-control small{
+	 visibility: hidden;
+}
+.other-control small{
+	color:#e74c3c;
+	position: absolute;
+	bottom: 1px;
+	left:1px;
+	margin-bottom: 13px;
+	visibility: visible;
+	
+
+}
+.other-control.error small{
+	 visibility: visible;
+	
+}
+
+
+.other-control.error i.fa-exclamation-circle{
+	color:#e74c3c;
+    visibility: visible;
+}
+
+ #form input[type=search]{
+ 	width: 600px;
+ }
+  
