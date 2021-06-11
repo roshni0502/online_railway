@@ -1,0 +1,30 @@
+#table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 700px;
+}
+#th{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+#td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+#baddd{
+	width: 100px;
+	 height :40px;
+	 border: 1px solid black ;
+	 border-radius:4px; 
+	 background:black; 
+	 color: white;
+	 outline: none;
+}
+#baddd:active{
+	box-shadow: 0px 0px 6px 0px blacl;
+}
+#baddd:hover {
+border-color:gray;
+background-color:gray;
+ 
+}

@@ -1,0 +1,48 @@
+#mytable th{
+	padding: 5px;
+	background: #009879;
+	
+	color: white;
+	border-width: 1px;
+	
+
+}
+#caption{
+	text-align: center;
+	border: 1px solid black;
+}
+#mytable td{
+	padding: 10px;
+	border-bottom: 1px solid gray;
+	
+	border-color: white; 
+
+}
+#mytable table{
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	width: 1390px;
+	border-collapse: collapse;
+	background: white;
+	border-radius: 4px 4px 0px 0px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.15) ;
+
+
+}
+#mytable tr:nth-of-type(odd){
+	background: #f3f3f3;
+    color:#009879 ;
+    font-weight: bold;
+}
+#mytable tbody tr{
+	border-bottom: 1px solid #dddddd;
+}
+#mytable tbody tr:last-of-type{
+	border-bottom: 2px solid #009879;
+}
+#mytable tr:hover{
+	background: #dddddd;
+}
+
